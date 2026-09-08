@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Processing SOP — Library SOP Manual</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="site-title">
+      Library SOP Manual
+      <span>Dept. of Library &amp; Information Science<br>Central University of Himachal Pradesh</span>
+    </a>
+    <button class="menu-toggle">Menu</button>
+    <nav>
+      <div class="group-label">Manual</div>
+      <a href="index.html">Home</a>
+      <div class="group-label">Procedures</div>
+      <a href="acquisition.html">1 — Acquisition</a>
+      <a href="serials.html">2 — Serials Control</a>
+      <a href="circulation.html">3 — Circulation</a>
+      <a href="technical-processing.html" class="active">4 — Technical Processing</a>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="content">
+
+      <h1 class="doc-title">Technical Processing (Cataloguing) Workflow</h1>
+      <div class="doc-meta">
+        Document No. LIB/TP/SOP/01 &nbsp;·&nbsp; Version 1.0
+        <div>Covers cataloguing, classification, authority control, and physical processing.</div>
+        <div><a class="docdl" href="docs/Technical_Processing_SOP.docx">Download the Word version (.docx) &darr;</a></div>
+      </div>
+
+      <h2>Purpose</h2>
+      <p>This procedure defines the workflow for technical processing of library materials — cataloguing, classification, authority control, and physical processing — from receipt of an accessioned item to its readiness for shelving and discovery in the OPAC.</p>
+
+      <h2>Scope</h2>
+      <ul>
+        <li>Newly accessioned books and non-book material received from Acquisition</li>
+        <li>Retrospective conversion / recataloguing of legacy collections</li>
+        <li>Gift, exchange, and donated material after accessioning</li>
+        <li>Authority records for names, subjects, and series</li>
+      </ul>
+
+      <h2>Objectives</h2>
+      <ol>
+        <li>Create accurate, standards-compliant bibliographic records for discovery and retrieval.</li>
+        <li>Apply a consistent classification scheme so related material is shelved together.</li>
+        <li>Maintain authority control so headings remain consistent across the catalogue.</li>
+        <li>Physically prepare items (labels, barcodes, security strips) for circulation without delay.</li>
+        <li>Minimise the time between accessioning and shelf-availability.</li>
+      </ol>
+
+      <h2>Roles and responsibilities</h2>
+      <table>
+        <thead><tr><th>Role</th><th>Responsibility</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Role">Librarian / University Librarian</td><td data-label="Responsibility">Approval of cataloguing policy, classification scheme, and standards to be followed</td></tr>
+          <tr><td data-label="Role">Cataloguing Section In-charge</td><td data-label="Responsibility">Day-to-day cataloguing, classification, quality check, authority control</td></tr>
+          <tr><td data-label="Role">Cataloguer / Processing Staff</td><td data-label="Responsibility">Copy/original cataloguing, call-number assignment, physical processing</td></tr>
+          <tr><td data-label="Role">Systems / IT Librarian</td><td data-label="Responsibility">MARC import/export, OPAC indexing, Z39.50/SRU target configuration</td></tr>
+          <tr><td data-label="Role">Acquisition Section</td><td data-label="Responsibility">Handover of accessioned items with accession details to Cataloguing</td></tr>
+        </tbody>
+      </table>
+
+      <h2>General workflow</h2>
+
+      <div class="step"><h3><span class="stepno">1</span>Receipt from Acquisition</h3>
+        <ul>
+          <li>Receive accessioned items with the accession number, invoice reference, and fund/source details.</li>
+          <li>Verify the item and accession details match before processing begins.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">2</span>Copy cataloguing search</h3>
+        <ul>
+          <li>Search external bibliographic utilities/union catalogues (WorldCat, other OPACs via Z39.50/SRU, National Union Catalogue) for an existing matching record.</li>
+          <li>If found, import it as the basis for local cataloguing.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">3</span>Original cataloguing</h3>
+        <ul>
+          <li>Where no copy exists, create a new bibliographic record following AACR2/RDA and MARC21 encoding.</li>
+          <li>Record all mandatory fields: title, statement of responsibility, edition, publication details, physical description, series, and notes.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">4</span>Subject analysis and classification</h3>
+        <ul>
+          <li>Assign subject headings (LCSH, Sears) reflecting the item's content.</li>
+          <li>Assign a classification number per the adopted scheme (DDC/UDC/CC) and derive the call number.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">5</span>Authority control</h3>
+        <ul>
+          <li>Check name/series headings against the authority file; create a new authority record if none exists.</li>
+          <li>Ensure heading consistency across all records referencing the same entity.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">6</span>Quality check</h3>
+        <ul>
+          <li>A second cataloguer or the Section In-charge verifies completeness, tagging accuracy, and classification before finalising.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">7</span>Physical processing</h3>
+        <ul>
+          <li>Affix the call-number label, barcode/RFID tag, ownership stamp, and date-due slip/security strip.</li>
+          <li>Attach a jacket/lamination where local policy requires it.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">8</span>Record finalisation and OPAC release</h3>
+        <ul>
+          <li>Mark the bibliographic and item record as complete so it becomes searchable in the OPAC.</li>
+          <li>Update the item status to available for circulation.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">9</span>Shelving</h3>
+        <ul>
+          <li>Hand over the processed item to the stacks/circulation section for shelving in call-number sequence.</li>
+        </ul>
+      </div>
+
+      <div class="step"><h3><span class="stepno">10</span>Record-keeping, statistics, and recataloguing</h3>
+        <ul>
+          <li>Maintain a cataloguing statistics register (items catalogued, backlog, pending items).</li>
+          <li>Periodically review and recatalogue/reclassify items affected by scheme revisions or identified errors.</li>
+        </ul>
+      </div>
+
+      <h2>Mapping to Koha's Cataloguing module</h2>
+      <p>Koha's Cataloguing module handles bibliographic and item record creation, with Authorities as a linked module.</p>
+      <table>
+        <thead><tr><th>General step</th><th>Koha feature / screen</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Step">Receipt from Acquisition</td><td data-label="Koha">A skeleton record is often already created during basket/receiving in Acquisitions</td><td data-label="Notes">Cataloguer completes/enhances rather than starting from nothing</td></tr>
+          <tr><td data-label="Step">Copy cataloguing search</td><td data-label="Koha">Cataloging → "New from Z39.50/SRU" search</td><td data-label="Notes">Searches configured external targets and imports the chosen record</td></tr>
+          <tr><td data-label="Step">Original cataloguing</td><td data-label="Koha">Cataloging → "New record" → MARC editor</td><td data-label="Notes">Framework selected for the material type enforces mandatory MARC tags</td></tr>
+          <tr><td data-label="Step">Subject analysis & classification</td><td data-label="Koha">MARC fields 082/090 (classification) and 6XX (subject headings)</td><td data-label="Notes">Call number generated/edited in the item record (952/942 fields)</td></tr>
+          <tr><td data-label="Step">Authority control</td><td data-label="Koha">Authorities module, linked automatically from the MARC editor</td><td data-label="Notes">Koha flags or links headings to existing authority records; new ones can be created in-line</td></tr>
+          <tr><td data-label="Step">Quality check</td><td data-label="Koha">"Check for errors before saving" MARC validation</td><td data-label="Notes">Validates against the framework's mandatory/repeatable field rules</td></tr>
+          <tr><td data-label="Step">Physical processing</td><td data-label="Koha">Tools → "Label creator" / barcode printing</td><td data-label="Notes">Generates print-ready call-number and barcode labels from item records</td></tr>
+          <tr><td data-label="Step">Record finalisation / OPAC release</td><td data-label="Koha">"Not for loan" status cleared; record indexed automatically</td><td data-label="Notes">Reindexing may run on a schedule (Zebra/Elasticsearch)</td></tr>
+          <tr><td data-label="Step">Shelving</td><td data-label="Koha">No dedicated screen — a physical/manual step</td><td data-label="Notes">Call number on the item record/label guides shelf placement</td></tr>
+          <tr><td data-label="Step">Record-keeping / reporting</td><td data-label="Koha">Reports module; "Batch record modification" for bulk fixes</td><td data-label="Notes">Supports bulk recataloguing/reclassification</td></tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        <strong>Classroom demo sequence.</strong> Search a title via Z39.50 and import the record → open it in the MARC editor and complete classification (082) and a subject heading (650) → save and show the linked/created authority entry → print a spine label and barcode via the Label Creator → confirm the item is now searchable in the OPAC. This covers Steps 2–8 above.
+      </div>
+
+      <h2>Forms and registers to maintain</h2>
+      <ul>
+        <li>Cataloguing Worksheet / Slip</li>
+        <li>Daily/Monthly Cataloguing Statistics Register</li>
+        <li>Backlog / Pending-Items Register</li>
+        <li>Authority Control Log</li>
+        <li>Recataloguing / Reclassification Register</li>
+      </ul>
+
+      <div class="pagenav">
+        <a href="circulation.html"><span class="dir">Previous</span>&larr; Circulation</a>
+        <span></span>
+      </div>
+
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>
